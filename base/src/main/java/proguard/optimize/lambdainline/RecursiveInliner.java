@@ -62,8 +62,8 @@ public class RecursiveInliner implements AttributeVisitor, InstructionVisitor, M
         codeAttribute.instructionsAccept(clazz, method,
             new InstructionOpCodeFilter(
                 new int[] {
-                    Instruction.OP_INVOKESTATIC,
-                    Instruction.OP_INVOKEVIRTUAL,
+                    /*Instruction.OP_INVOKESTATIC,
+                    Instruction.OP_INVOKEVIRTUAL,*/
                     Instruction.OP_INVOKESPECIAL,
                     Instruction.OP_INVOKEDYNAMIC,
                     Instruction.OP_INVOKEINTERFACE

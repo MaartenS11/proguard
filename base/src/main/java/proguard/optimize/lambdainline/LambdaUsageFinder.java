@@ -48,7 +48,8 @@ public class LambdaUsageFinder implements InstructionVisitor, AttributeVisitor, 
             new InstructionOpCodeFilter(
                 new int[] {
                         Instruction.OP_INVOKESTATIC,
-                        Instruction.OP_INVOKEVIRTUAL
+                        Instruction.OP_INVOKEVIRTUAL,
+                        Instruction.OP_INVOKESPECIAL
                 },
                 this
             )
